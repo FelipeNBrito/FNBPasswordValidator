@@ -1,10 +1,10 @@
 {
   "name": "fnbpasswordvalidator",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Powerfull password validation for js",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --reporter spec"
   },
   "repository": {
     "type": "git",
@@ -22,5 +22,9 @@
   "bugs": {
     "url": "https://github.com/FelipeNBrito/FNBPasswordValidator/issues"
   },
-  "homepage": "https://github.com/FelipeNBrito/FNBPasswordValidator#readme"
+  "homepage": "https://github.com/FelipeNBrito/FNBPasswordValidator#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3"
+  }
 }
