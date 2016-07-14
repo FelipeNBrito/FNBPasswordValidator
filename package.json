@@ -1,0 +1,26 @@
+{
+  "name": "fnbpasswordvalidator",
+  "version": "1.0.2",
+  "description": "Powerfull password validation for js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FelipeNBrito/FNBPasswordValidator.git"
+  },
+  "keywords": [
+    "password",
+    "validation",
+    "password",
+    "validator",
+    "secure"
+  ],
+  "author": "Felipe N. Brito <me@felipenbrito.com> (http://felipenbrito.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FelipeNBrito/FNBPasswordValidator/issues"
+  },
+  "homepage": "https://github.com/FelipeNBrito/FNBPasswordValidator#readme"
+}
