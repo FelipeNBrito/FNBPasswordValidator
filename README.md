@@ -9,7 +9,7 @@
 Make sure youre users have a secure password, checking for uppercase/lowercase letters, numbers, special characters, prohibited words (e.g. their name or email address), min/max password length, and passwords from the most common passwords list.
 
 
-## Features
+## Features Test
 
 - [x] Uppercase verification
 - [x] Lowercase verification
