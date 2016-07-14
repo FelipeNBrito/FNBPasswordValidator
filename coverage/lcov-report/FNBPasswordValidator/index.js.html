@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for FNBPasswordValidator/index.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">all files</a> / <a href="index.html">FNBPasswordValidator/</a> index.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">97.92% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>47/48</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">95.45% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>42/44</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>6/6</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">97.92% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>47/48</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">11×</span>
+<span class="cline-any cline-yes">11×</span>
+<span class="cline-any cline-yes">11×</span>
+<span class="cline-any cline-yes">11×</span>
+<span class="cline-any cline-yes">11×</span>
+<span class="cline-any cline-yes">11×</span>
+<span class="cline-any cline-yes">11×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">11×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8×</span>
+<span class="cline-any cline-yes">8×</span>
+<span class="cline-any cline-yes">8×</span>
+<span class="cline-any cline-yes">8×</span>
+<span class="cline-any cline-yes">8×</span>
+<span class="cline-any cline-yes">8×</span>
+<span class="cline-any cline-yes">8×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">11×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">10×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">8×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">7×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">5×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">exports.validate = function(password, options) {
+&nbsp;
+	var min = 8;	// Password max length
+	var max = 255;	// Password min length
+	var numbers = true;
+	var uppercase = true;
+	var lowercase = true;
+	var specialCharacters = true;
+	var prohibitedWords = undefined;
+&nbsp;
+	if (typeof(options) === 'object') {
+&nbsp;
+		min = options.min || min;
+		max = options.max || max;
+		numbers = options.numbers || numbers;
+		uppercase = options.uppercase || uppercase;
+		lowercase = options.lowercase || lowercase;
+		specialCharacters = options.specialCharacters || specialCharacters;
+		prohibitedWords = options.prohibitedWords || prohibitedWords;
+	}
+&nbsp;
+	if (!password) {
+		return {valid: false, message: "Password undefined."};
+	}
+&nbsp;
+	if (password.length &lt; min) {
+		return {valid: false, message: "Password must be at least " + min + " chatacters long."};
+	}
+&nbsp;
+	if (password.length &gt; max) {
+		return {valid: false, message: "Password must be no longer than " + max + " chatacters long."};
+	}
+&nbsp;
+	if (!hasLowerCase(password) &amp;&amp; lowercase) {
+		return {valid: false, message: "Password must have at least one lowercase character."};
+	}
+&nbsp;
+	if (!hasUpperCase(password) &amp;&amp; uppercase) {
+		return {valid: false, message: "Password must have at least one uppercase character."};
+	}
+&nbsp;
+	if(!hasSpecialCharacters(password) &amp;&amp; specialCharacters) {
+		return {valid: false, message: "Password must have at least one special character."};
+	}
+&nbsp;
+	<span class="missing-if-branch" title="if path not taken" >I</span>if(!hasNumber(password) &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >numbers)</span> {
+<span class="cstat-no" title="statement not covered" >		return {valid: false, message: "Password must have at least one number."};</span>
+	}
+&nbsp;
+	if(! (prohibitedWords == undefined) &amp;&amp; hasProhibitedWord(password, prohibitedWords).result) {
+		var word = hasProhibitedWord(password, prohibitedWords).word;
+		return {valid: false, message: "Password contains the invalid word: " + word};
+	}
+&nbsp;
+	return {valid: true, message: "Password is valid."};
+}
+&nbsp;
+var hasLowerCase = function(string) {
+	return string.toUpperCase() !== string;
+}
+&nbsp;
+var hasUpperCase = function(string) {
+	return string.toLowerCase() !== string;
+}
+&nbsp;
+var hasSpecialCharacters = function(string) {
+	return /[~`!@#$%\^&amp;*+=\-\[\]\\';,/{}|\\":&lt;&gt;\?]/g.test(string);
+}
+&nbsp;
+var hasNumber = function(string) {
+	 return /[0-9]/.test(string); 
+}
+&nbsp;
+var hasProhibitedWord = function(string, prohibitedWords) {
+&nbsp;
+	var lowerCaseString = string.toLowerCase();
+&nbsp;
+	for (var i = prohibitedWords.length - 1; i &gt;= 0; i--) {
+		
+		if (lowerCaseString.indexOf(prohibitedWords[i].toLowerCase()) != -1) {
+			return {result: true, word: prohibitedWords[i]};
+		}
+	}
+&nbsp;
+	return {result: false};
+}</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Thu Jul 14 2016 01:21:31 GMT-0400 (EDT)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>

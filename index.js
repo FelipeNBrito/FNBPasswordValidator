@@ -6,7 +6,7 @@ exports.validate = function(password, options) {
 	var uppercase = true;
 	var lowercase = true;
 	var specialCharacters = true;
-	var prohibidWords = undefined;
+	var prohibitedWords = undefined;
 
 	if (typeof(options) === 'object') {
 
@@ -16,7 +16,7 @@ exports.validate = function(password, options) {
 		uppercase = options.uppercase || uppercase;
 		lowercase = options.lowercase || lowercase;
 		specialCharacters = options.specialCharacters || specialCharacters;
-		prohibidWords = options.prohibidWords || prohibidWords;
+		prohibitedWords = options.prohibitedWords || prohibitedWords;
 	}
 
 	if (!password) {
@@ -47,8 +47,8 @@ exports.validate = function(password, options) {
 		return {valid: false, message: "Password must have at least one number."};
 	}
 
-	if(! (prohibidWords == undefined) && hasProhibidWord(password, prohibidWords).result) {
-		var word = hasProhibidWord(password, prohibidWords).word;
+	if(! (prohibitedWords == undefined) && hasProhibitedWord(password, prohibitedWords).result) {
+		var word = hasProhibitedWord(password, prohibitedWords).word;
 		return {valid: false, message: "Password contains the invalid word: " + word};
 	}
 
@@ -71,14 +71,14 @@ var hasNumber = function(string) {
 	 return /[0-9]/.test(string); 
 }
 
-var hasProhibidWord = function(string, prohibidWords) {
+var hasProhibitedWord = function(string, prohibitedWords) {
 
 	var lowerCaseString = string.toLowerCase();
 
-	for (var i = prohibidWords.length - 1; i >= 0; i--) {
+	for (var i = prohibitedWords.length - 1; i >= 0; i--) {
 		
-		if (lowerCaseString.indexOf(prohibidWords[i].toLowerCase()) != -1) {
-			return {result: true, word: prohibidWords[i]};
+		if (lowerCaseString.indexOf(prohibitedWords[i].toLowerCase()) != -1) {
+			return {result: true, word: prohibitedWords[i]};
 		}
 	}
 
