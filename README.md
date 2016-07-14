@@ -26,7 +26,7 @@ npm install fnbpasswordvalidator
 
 ## Contribute
 
-We would love for you to contribute to *fnbpasswordvalidator**, check the ``LICENSE`` file for more info.
+We would love for you to contribute to *fnbpasswordvalidator*, check the ``LICENSE`` file for more info.
 
 ## Meta
 
