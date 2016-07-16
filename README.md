@@ -32,7 +32,11 @@ Client-side
 ```html
 <script type="text/javascript" src="fnbpasswordvalidator.min.js"></script>
 <script type="text/javascript">
-  validate("somePassword*");
+  var result = passwordValidator("somePassword*");
+  
+  if (result.valid == false) { 
+    alert(result.message);
+  }
 </script>
 ```
 
