@@ -6,7 +6,7 @@
 [![Build Status](https://travis-ci.org/FelipeNBrito/FNBPasswordValidator.svg?branch=master)](https://travis-ci.org/FelipeNBrito/FNBPasswordValidator)
 [![Coverage Status](https://coveralls.io/repos/github/FelipeNBrito/FNBPasswordValidator/badge.svg?branch=master)](https://coveralls.io/github/FelipeNBrito/FNBPasswordValidator?branch=master)
 
-Make sure youre users have a secure password, checking for uppercase/lowercase letters, numbers, special characters, prohibited words (e.g. their name or email address), min/max password length, and passwords from the most common passwords list.
+Make sure youre users have a secure password, checking for uppercase/lowercase letters, numbers, special characters, prohibited words (e.g. their name or email address) and min/max password length.
 
 
 ## Features
@@ -16,7 +16,6 @@ Make sure youre users have a secure password, checking for uppercase/lowercase l
 - [x] Numbers verification
 - [x] Special Characters verification
 - [x] Prohibited words verification
-- [ ] Passwords list verification
 
 
 ##Installation
