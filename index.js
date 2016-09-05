@@ -19,6 +19,7 @@ exports.validate = function(password, options) {
 		if (!options.specialCharacters) {
 			specialCharacters = false;
 		}
+		
 		prohibitedWords = options.prohibitedWords || prohibitedWords;
 	}
 
