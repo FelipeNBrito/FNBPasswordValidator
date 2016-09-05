@@ -15,7 +15,10 @@ exports.validate = function(password, options) {
 		numbers = options.numbers || numbers;
 		uppercase = options.uppercase || uppercase;
 		lowercase = options.lowercase || lowercase;
-		specialCharacters = options.specialCharacters || specialCharacters;
+		
+		if (!options.specialCharacters) {
+			specialCharacters = false;
+		}
 		prohibitedWords = options.prohibitedWords || prohibitedWords;
 	}
 
