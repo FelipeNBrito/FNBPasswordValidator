@@ -2,9 +2,9 @@ exports.validate = function(password, options) {
 
 	var min = 8;	// Password max length
 	var max = 255;	// Password min length
-	var numbers = true;
-	var uppercase = true;
-	var lowercase = true;
+	var numbers = true; 
+	var uppercase = true; 	// Password must have uppercase
+	var lowercase = true;	// Password must have lowercase
 	var specialCharacters = true;
 	var prohibitedWords = undefined;
 
