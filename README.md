@@ -6,6 +6,7 @@
 [![Build Status](https://travis-ci.org/FelipeNBrito/FNBPasswordValidator.svg?branch=master)](https://travis-ci.org/FelipeNBrito/FNBPasswordValidator)
 [![Coverage Status](https://coveralls.io/repos/github/FelipeNBrito/FNBPasswordValidator/badge.svg?branch=master)](https://coveralls.io/github/FelipeNBrito/FNBPasswordValidator?branch=master)
 [![npm](https://img.shields.io/npm/dt/fnbpasswordvalidator.svg)]()
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/8b145aaf5f3a4b92be06d259b4cde8df)](https://www.codacy.com/app/felipenevesbrito/FNBPasswordValidator?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=FelipeNBrito/FNBPasswordValidator&amp;utm_campaign=Badge_Grade)
 
 Make sure youre users have a secure password, checking for uppercase/lowercase letters, numbers, special characters, prohibited words (e.g. their name or email address) and min/max password length.
 
