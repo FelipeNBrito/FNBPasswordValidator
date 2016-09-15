@@ -5,6 +5,7 @@
 [![npm](https://img.shields.io/npm/l/express.svg?maxAge=2592000)]()
 [![Build Status](https://travis-ci.org/FelipeNBrito/FNBPasswordValidator.svg?branch=master)](https://travis-ci.org/FelipeNBrito/FNBPasswordValidator)
 [![Coverage Status](https://coveralls.io/repos/github/FelipeNBrito/FNBPasswordValidator/badge.svg?branch=master)](https://coveralls.io/github/FelipeNBrito/FNBPasswordValidator?branch=master)
+[![npm](https://img.shields.io/npm/dt/fnbpasswordvalidator.svg)]()
 
 Make sure youre users have a secure password, checking for uppercase/lowercase letters, numbers, special characters, prohibited words (e.g. their name or email address) and min/max password length.
 
