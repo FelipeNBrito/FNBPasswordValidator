@@ -3,8 +3,8 @@ exports.validate = function(password, options) {
 	var min = 8;	// Password max length
 	var max = 255;	// Password min length
 	var numbers = true;
-	var uppercase = true;
-	var lowercase = true;
+	var uppercase = true; 	// Password must have uppercase
+	var lowercase = true;	// Password must have lowercase
 	var specialCharacters = true;
 	var prohibitedWords = undefined;
 
@@ -15,12 +15,16 @@ exports.validate = function(password, options) {
 		numbers = options.numbers || numbers;
 		uppercase = options.uppercase || uppercase;
 		lowercase = options.lowercase || lowercase;
-		
+
 		if (!options.specialCharacters) {
 			specialCharacters = false;
 		}
-		
+
 		prohibitedWords = options.prohibitedWords || prohibitedWords;
+	}
+
+	if (password == "arquitetura") {
+		console.log("the password is arquitetura");
 	}
 
 	if (!password) {
@@ -72,7 +76,7 @@ var hasSpecialCharacters = function(string) {
 }
 
 var hasNumber = function(string) {
-	 return /[0-9]/.test(string); 
+	 return /[0-9]/.test(string);
 }
 
 var hasProhibitedWord = function(string, prohibitedWords) {
@@ -80,7 +84,7 @@ var hasProhibitedWord = function(string, prohibitedWords) {
 	var lowerCaseString = string.toLowerCase();
 
 	for (var i = prohibitedWords.length - 1; i >= 0; i--) {
-		
+
 		if (lowerCaseString.indexOf(prohibitedWords[i].toLowerCase()) != -1) {
 			return {result: true, word: prohibitedWords[i]};
 		}
