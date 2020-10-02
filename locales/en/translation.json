@@ -1,0 +1,12 @@
+{
+    "welcome": "Welcome",
+    "undefinedPassword": "Password undefined",
+    "minLength": "Password must be at least {{min}} chatacters long.",
+    "maxLength": "Password must be no longer than {{max}} chatacters long.",
+    "atLeastOneLoweChar": "Password must have at least one lowercase character.",
+    "atLeastOneUpperChar": "Password must have at least one uppercase character.",
+    "atLeastOneSpeacialChar": "Password must have at least one special character.",
+    "atLeastOneNumber": "Password must have at least one number.",
+    "invalidWord": "Password contains the invalid word: {{word}}" ,
+    "invalidPassword": "Password is valid."
+}
