@@ -8,5 +8,5 @@
     "atLeastOneSpeacialChar": "Adgangskoden skal indeholde mindst et specialtegn.",
     "atLeastOneNumber": "Adgangskoden skal indeholde mindst et ciffer.",
     "invalidWord": "Adgangskoden indeholder det invalide ord: {{word}}" ,
-    "invalidPassword": "Adgangskoden er ikke godkendt."
+    "invalidPassword": "Adgangskoden er godkendt."
 } 
