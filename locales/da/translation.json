@@ -1,0 +1,12 @@
+{
+    "welcome": "Velkommen",
+    "undefinedPassword": "Adgangskoden er ikke sat",
+    "minLength": "Adgangskoden skal være mindst {{min}} tegn.",
+    "maxLength": "Adgangskoden må ikke være længere end {{max}} tegn.",
+    "atLeastOneLoweChar": "Adgangskoden skal indeholde mindst et lille bogstav.",
+    "atLeastOneUpperChar": "Adgangskoden skal indeholde mindst et stort bogstav.",
+    "atLeastOneSpeacialChar": "Adgangskoden skal indeholde mindst et specialtegn.",
+    "atLeastOneNumber": "Adgangskoden skal indeholde mindst et ciffer.",
+    "invalidWord": "Adgangskoden indeholder det invalide ord: {{word}}" ,
+    "invalidPassword": "Adgangskoden er ikke godkendt."
+} 
