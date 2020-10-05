@@ -1,3 +1,6 @@
+const i18next = require("./i18n");
+//console.log(i18next.lng);
+// use i18next.changeLanguage() function to change language
 var passwordValidator = function(password, options) {
 
 	var min = 8;	// Password max length
@@ -23,39 +26,39 @@ var passwordValidator = function(password, options) {
 	}
 
 	if (!password) {
-		return {valid: false, message: "Password undefined."};
+		return {valid: false, message: i18next.t("undefinedPassword")};
 	}
 
 	if (password.length < min) {
-		return {valid: false, message: "Password must be at least " + min + " chatacters long."};
+		return {valid: false, message: i18next.t('minLength', { min: min })};
 	}
 
 	if (password.length > max) {
-		return {valid: false, message: "Password must be no longer than " + max + " chatacters long."};
+		return {valid: false, message: i18next.t('minLength', { max: max })};
 	}
 
 	if (!hasLowerCase(password) && lowercase) {
-		return {valid: false, message: "Password must have at least one lowercase character."};
+		return {valid: false, message: i18next.t('atLeastOneLowerChar')};
 	}
 
 	if (!hasUpperCase(password) && uppercase) {
-		return {valid: false, message: "Password must have at least one uppercase character."};
+		return {valid: false, message: i18next.t('atLeastUpperLowerChar')};
 	}
 
 	if(!hasSpecialCharacters(password) && specialCharacters) {
-		return {valid: false, message: "Password must have at least one special character."};
+		return {valid: false, message: i18next.t('atLeastSpecialLowerChar')};
 	}
 
 	if(!hasNumber(password) && numbers) {
-		return {valid: false, message: "Password must have at least one number."};
+		return {valid: false, message: i18next.t('atLeastOneNumber')};
 	}
 
 	if(! (prohibitedWords == undefined) && hasProhibitedWord(password, prohibitedWords).result) {
 		var word = hasProhibitedWord(password, prohibitedWords).word;
-		return {valid: false, message: "Password contains the invalid word: " + word};
+		return {valid: false, message: i18next.t('atLeastOneNumber', { word: word })};
 	}
 
-	return {valid: true, message: "Password is valid."};
+	return {valid: true, message: i18next.t('invalidPassword')};
 }
 
 var hasLowerCase = function(string) {

@@ -1,0 +1,12 @@
+{
+    "welcome": "Hoş geldin",
+    "undefinedPassword": "Şifre tanımlı değil",
+    "minLength": "Şifre en az {{min}} karakter uzunluğunda olmalı",
+    "maxLength": "Şifre {{max}}'ten uzun olmamalı",
+    "atLeastOneLowerChar": "Şifre en az bir küçük karakter içermeli",
+    "atLeastOneUpperChar": "Şifre en az bir büyük karakter içermeli",
+    "atLeastOneSpeacialChar": "Şifre en az bir özel karakter içermeli.",
+    "atLeastOneNumber": "Şifre en az bir sayı içermeli",
+    "invalidWord": "Şifreniz geçerli olmayan bir karakter içeriyor {{word}}",
+    "invalidPassword": "Şifre geçersiz"
+}

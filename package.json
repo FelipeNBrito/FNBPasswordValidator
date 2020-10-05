@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha --reporter spec",
-     "cover": "node_modules/istanbul/lib/cli.js cover node_modules/mocha/bin/_mocha -- -R spec test/*"
+    "cover": "node_modules/istanbul/lib/cli.js cover node_modules/mocha/bin/_mocha -- -R spec test/*"
   },
   "repository": {
     "type": "git",
@@ -29,5 +29,9 @@
     "coveralls": "^2.11.11",
     "istanbul": "^0.4.4",
     "mocha": "^2.5.3"
+  },
+  "dependencies": {
+    "i18next": "^19.8.0",
+    "i18next-sync-fs-backend": "^1.1.1"
   }
 }
