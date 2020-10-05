@@ -1,0 +1,12 @@
+{
+    "welcome": "Bem-vindo",
+    "undefinedPassword": "Senha indefinida",
+    "minLength": "A senha deve conter ao menos {{min}} caracteres.",
+    "maxLength": "A senha não deve conter mais que {{max}} caracteres.",
+    "atLeastOneLoweChar": "A senha deve conter ao menos um caractere minúsculo.",
+    "atLeastOneUpperChar": "A senha deve conter ao menos um caractere maiúsculo.",
+    "atLeastOneSpeacialChar": "A senha deve conter ao menos um caractere especial.",
+    "atLeastOneNumber": "A senha deve conter ao menos um número.",
+    "invalidWord": "A senha contém uma palavra inválida. Palavra: {{word}}" ,
+    "invalidPassword": "Senha inválida."
+}
