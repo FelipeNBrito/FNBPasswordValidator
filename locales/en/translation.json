@@ -8,5 +8,5 @@
     "atLeastOneSpeacialChar": "Password must have at least one special character.",
     "atLeastOneNumber": "Password must have at least one number.",
     "invalidWord": "Password contains the invalid word: {{word}}" ,
-    "invalidPassword": "Password is valid."
+    "invalidPassword": "Password is invalid."
 }
