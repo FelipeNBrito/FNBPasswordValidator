@@ -1,15 +1,14 @@
-const i18next = require("./i18n");
-//console.log(i18next.lng);
-// use i18next.changeLanguage() function to change language
-var passwordValidator = function(password, options) {
+import i18next from "./i18n";
 
-	var min = 8;	// Password max length
-	var max = 255;	// Password min length
-	var numbers = true;
-	var uppercase = true;
-	var lowercase = true;
-	var specialCharacters = true;
-	var prohibitedWords = undefined;
+exports.validate = function(password, options) {
+
+	let min = 8;	
+	let max = 255;
+	let numbers = true;
+	let uppercase = true;
+	let lowercase = true;
+	let specialCharacters = true;
+	let prohibitedWords = undefined;
 
 	if (typeof(options) === 'object') {
 
@@ -61,27 +60,27 @@ var passwordValidator = function(password, options) {
 	return {valid: true, message: i18next.t('invalidPassword')};
 }
 
-var hasLowerCase = function(string) {
+let hasLowerCase = function(string) {
 	return string.toUpperCase() !== string;
 }
 
-var hasUpperCase = function(string) {
+let hasUpperCase = function(string) {
 	return string.toLowerCase() !== string;
 }
 
-var hasSpecialCharacters = function(string) {
+let hasSpecialCharacters = function(string) {
 	return /[~`!@#$%\^&*+=\-\[\]\\';,/{}|\\":<>\?]/g.test(string);
 }
 
-var hasNumber = function(string) {
+let hasNumber = function(string) {
 	 return /[0-9]/.test(string); 
 }
 
-var hasProhibitedWord = function(string, prohibitedWords) {
+let hasProhibitedWord = function(string, prohibitedWords) {
 
-	var lowerCaseString = string.toLowerCase();
+	let lowerCaseString = string.toLowerCase();
 
-	for (var i = prohibitedWords.length - 1; i >= 0; i--) {
+	for (let i = prohibitedWords.length - 1; i >= 0; i--) {
 		
 		if (lowerCaseString.indexOf(prohibitedWords[i].toLowerCase()) != -1) {
 			return {result: true, word: prohibitedWords[i]};

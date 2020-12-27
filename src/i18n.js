@@ -1,10 +1,10 @@
-const i18next = require('i18next')
-const Backend = require('i18next-sync-fs-backend')
+import i18next from 'i18next';
+import Backend from 'i18next-sync-fs-backend';
 
 i18next.use(Backend).init({
-  lng: 'tr',
+  lng: 'en',
   fallbackLng: 'en',
-  preload: ['en', 'tr'],
+  preload: ['en'],
   ns: ['translation'],
   defaultNS: 'translation',
   backend: {
@@ -18,5 +18,4 @@ i18next.use(Backend).init({
   console.log(t('minLength', { min: 8 }))
 })
 
-module.exports = i18next
-
+module.exports = i18next;

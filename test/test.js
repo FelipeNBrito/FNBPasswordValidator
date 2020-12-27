@@ -1,7 +1,7 @@
 'use strict';
 
 var expect = require('chai').expect;
-var passwordValidator = require('../index');
+var passwordValidator = require('../dist/index');
 
 describe('Password Validator', function() {
 
